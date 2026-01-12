@@ -35,35 +35,57 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-4 px-4 py-2 bg-[#2563eb]/10 border border-[#60a5fa]/30 rounded-full">
-              <span className="text-[#60a5fa] font-medium">Trusted by Growing Businesses</span>
+              <span className="text-[#60a5fa] font-medium">Get More Traffic • Convert More Customers</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Transform Your Business Into An{" "}
-              <span className="gradient-text">Online Powerhouse</span>
+              From Invisible to{" "}
+              <span className="gradient-text">Unstoppable</span>{" "}
+              Online
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed">
-              We deliver niche growth services that give your business the traction it needs to dominate your market and build lasting customer loyalty.
+              A complete online growth system that gets you found, builds trust, and turns visitors into customers, without the guesswork.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="#contact" className="px-8 py-4 bg-gradient-to-r from-[#c9a961] to-[#2563eb] rounded-full text-white text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#c9a961]/30">
-                Start Your Growth Journey
+                Book Your Free Strategy Call
               </a>
               <a href="#services" className="px-8 py-4 border-2 border-[#c9a961] rounded-full text-[#e4c77d] text-lg font-semibold hover:bg-[#c9a961]/10 transition-colors">
-                Explore Services
+                See How It Works
               </a>
             </div>
-            <div className="mt-12 flex flex-wrap justify-center gap-8 text-center">
-              <div>
-                <CountUp end={500} suffix="+" duration={2500} />
-                <div className="text-gray-400 mt-1">Businesses Grown</div>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="flex items-center gap-3 bg-[#1a1a24]/50 p-4 rounded-xl border border-[#c9a961]/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#c9a961] to-[#2563eb] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-white">Get Found</div>
+                  <div className="text-sm text-gray-400">Show up first on Google</div>
+                </div>
               </div>
-              <div>
-                <CountUp end={98} suffix="%" duration={2500} />
-                <div className="text-gray-400 mt-1">Client Satisfaction</div>
+              <div className="flex items-center gap-3 bg-[#1a1a24]/50 p-4 rounded-xl border border-[#60a5fa]/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#2563eb] to-[#c9a961] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-white">Build Trust</div>
+                  <div className="text-sm text-gray-400">Look like the best choice</div>
+                </div>
               </div>
-              <div>
-                <CountUp end={5.2} suffix="x" duration={2500} decimals={1} />
-                <div className="text-gray-400 mt-1">Average ROI</div>
+              <div className="flex items-center gap-3 bg-[#1a1a24]/50 p-4 rounded-xl border border-[#c9a961]/20">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#c9a961] to-[#2563eb] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-white">Grow Sales</div>
+                  <div className="text-sm text-gray-400">Turn clicks into customers</div>
+                </div>
               </div>
             </div>
           </div>
@@ -90,22 +112,22 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">Strategic SEO</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Advanced SEO</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Dominate search results and attract high-intent customers actively searching for your services.
+                Strategic search engine optimization to increase visibility, drive qualified traffic, and boost your online presence.
               </p>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Keyword Research & Strategy</span>
+                  <span>Comprehensive keyword strategy</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Technical SEO Optimization</span>
+                  <span>Technical SEO & site optimization</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Monthly Performance Reports</span>
+                  <span>Content optimization & link building</span>
                 </li>
               </ul>
             </div>
@@ -144,22 +166,22 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">Social Growth</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Social Media Growth</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Build a powerful social presence that engages your audience and drives consistent business growth.
+                Build a powerful social presence that keeps your brand top-of-mind and drives consistent engagement with your audience.
               </p>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Content Strategy & Creation</span>
+                  <span>Content strategy & scheduling</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Community Management</span>
+                  <span>Community engagement</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#e4c77d] mt-1">✓</span>
-                  <span>Influencer Partnerships</span>
+                  <span>Performance tracking</span>
                 </li>
               </ul>
             </div>
@@ -222,25 +244,25 @@ export default function Home() {
             <div className="card-hover bg-gradient-to-br from-[#1a1a24] to-[#13131b] p-8 rounded-2xl border border-[#60a5fa]/20">
               <div className="w-14 h-14 bg-gradient-to-br from-[#2563eb] to-[#c9a961] rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-[#2563eb]/20">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-white">Brand Strategy</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Ongoing Maintenance</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Develop a cohesive brand identity that resonates with your audience and sets you apart from competitors.
+                Continuous updates, monitoring, and optimization to keep your online presence fresh and performing at its best.
               </p>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-[#60a5fa] mt-1">✓</span>
-                  <span>Brand Positioning</span>
+                  <span>Regular content updates</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#60a5fa] mt-1">✓</span>
-                  <span>Visual Identity Design</span>
+                  <span>Performance monitoring</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#60a5fa] mt-1">✓</span>
-                  <span>Brand Guidelines</span>
+                  <span>Security & backup management</span>
                 </li>
               </ul>
             </div>
@@ -251,101 +273,120 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Why <span className="gradient-text">Design Custom</span>?
-              </h2>
-              <p className="text-xl text-gray-400 mb-6 leading-relaxed">
-                We don't just deliver services—we forge partnerships. Our mission is to transform businesses into market leaders through strategic, data-driven growth solutions.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#d4af37] to-[#3b82f6] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Proven Track Record</h3>
-                    <p className="text-gray-400">Over 500 businesses transformed with measurable, sustainable growth.</p>
-                  </div>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Why <span className="gradient-text">Design Custom</span>?
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              I bring fresh energy, modern strategies, and a genuine commitment to your success. When you work with me, you're not just another account. You're a valued partner.
+            </p>
+          </div>
+          
+          {/* Timeline-style layout */}
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#c9a961] to-[#2563eb] flex items-center justify-center shadow-lg shadow-[#c9a961]/30">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#2563eb] to-[#c9a961] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2563eb]/20">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Tailored Solutions</h3>
-                    <p className="text-gray-400">Custom strategies designed specifically for your niche and market position.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#c9a961] to-[#2563eb] rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#c9a961]/20">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white">Transparent Results</h3>
-                    <p className="text-gray-400">Clear reporting and open communication every step of the journey.</p>
-                  </div>
-                </div>
+              </div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-2xl font-bold text-white mb-2">Personalized Attention</h3>
+                <p className="text-lg text-gray-400">You'll work directly with me. No assistants, no outsourcing. Your project gets my full focus and expertise.</p>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#1a1a24] to-[#13131b] p-8 rounded-2xl border border-[#c9a961]/30">
-                <div className="aspect-square flex items-center justify-center">
-                  <Image
-                    src="/dc-full-logo.png"
-                    alt="Design Custom"
-                    width={400}
-                    height={400}
-                    className="logo-glow"
-                  />
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#2563eb] to-[#c9a961] flex items-center justify-center shadow-lg shadow-[#2563eb]/30">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-br from-[#c9a961] to-[#2563eb] rounded-2xl opacity-20 blur-3xl"></div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-2xl font-bold text-white mb-2">Modern Strategies</h3>
+                <p className="text-lg text-gray-400">Up-to-date with the latest trends, tools, and techniques to give you a competitive edge in your market.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#c9a961] to-[#2563eb] flex items-center justify-center shadow-lg shadow-[#c9a961]/30">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-2xl font-bold text-white mb-2">Affordable & Flexible</h3>
+                <p className="text-lg text-gray-400">Competitive pricing and flexible packages designed specifically for growing businesses like yours.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* What You Get Section */}
       <section id="results" className="py-20 px-6 bg-gradient-to-b from-transparent to-[#13131b]/80">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Real <span className="gradient-text">Results</span> For Real Businesses
+              What You Can <span className="gradient-text">Expect</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Don't just take our word for it—see the transformations we've delivered.
+              My commitment to delivering measurable results and exceptional service with every project.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-[#1a1a24] to-[#13131b] p-8 rounded-2xl border border-[#c9a961]/30 hover:border-[#c9a961]/50 transition-all">
-              <div className="text-5xl mb-2">
-                <CountUp end={250} prefix="+" suffix="%" duration={2500} />
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              {/* Gradient line connecting items */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#c9a961] via-[#2563eb] to-[#c9a961]"></div>
+              
+              {/* Items */}
+              <div className="space-y-12">
+                <div className="md:flex items-center gap-8">
+                  <div className="md:w-1/2 md:text-right md:pr-8">
+                    <div className="text-2xl font-bold text-white mb-2">Fast Turnaround</div>
+                    <p className="text-gray-400">Quick response times and efficient project delivery without compromising quality</p>
+                  </div>
+                  <div className="hidden md:flex w-16 h-16 rounded-full bg-gradient-to-br from-[#c9a961] to-[#2563eb] items-center justify-center shadow-lg shadow-[#c9a961]/40 z-10 flex-shrink-0">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="md:w-1/2 md:pl-8"></div>
+                </div>
+
+                <div className="md:flex items-center gap-8">
+                  <div className="md:w-1/2 md:pr-8"></div>
+                  <div className="hidden md:flex w-16 h-16 rounded-full bg-gradient-to-br from-[#2563eb] to-[#c9a961] items-center justify-center shadow-lg shadow-[#2563eb]/40 z-10 flex-shrink-0">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="md:w-1/2 md:pl-8">
+                    <div className="text-2xl font-bold text-white mb-2">Quality Work</div>
+                    <p className="text-gray-400">Professional-grade solutions built with attention to detail and best practices</p>
+                  </div>
+                </div>
+
+                <div className="md:flex items-center gap-8">
+                  <div className="md:w-1/2 md:text-right md:pr-8">
+                    <div className="text-2xl font-bold text-white mb-2">Clear Communication</div>
+                    <p className="text-gray-400">Regular updates and transparent discussions about your project's progress</p>
+                  </div>
+                  <div className="hidden md:flex w-16 h-16 rounded-full bg-gradient-to-br from-[#c9a961] to-[#2563eb] items-center justify-center shadow-lg shadow-[#c9a961]/40 z-10 flex-shrink-0">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                  </div>
+                  <div className="md:w-1/2 md:pl-8"></div>
+                </div>
               </div>
-              <div className="text-xl font-semibold text-white mb-2">Organic Traffic</div>
-              <p className="text-gray-400">E-commerce business saw massive growth in just 6 months</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#1a1a24] to-[#13131b] p-8 rounded-2xl border border-[#60a5fa]/30 hover:border-[#60a5fa]/50 transition-all">
-              <div className="text-5xl mb-2">
-                <CountUp end={5.2} suffix="x" duration={2500} decimals={1} />
-              </div>
-              <div className="text-xl font-semibold text-white mb-2">ROI Increase</div>
-              <p className="text-gray-400">SaaS company multiplied their return on investment</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#1a1a24] to-[#13131b] p-8 rounded-2xl border border-[#c9a961]/30 hover:border-[#c9a961]/50 transition-all">
-              <div className="text-5xl mb-2">
-                <CountUp end={92} suffix="%" duration={2500} />
-              </div>
-              <div className="text-xl font-semibold text-white mb-2">Lead Quality</div>
-              <p className="text-gray-400">B2B service provider improved lead qualification rate</p>
             </div>
           </div>
         </div>
@@ -358,10 +399,10 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#c9a961] to-[#2563eb] rounded-full opacity-10 blur-3xl"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Ready To <span className="gradient-text">Elevate</span> Your Business?
+                Ready To <span className="gradient-text">Grow</span> Together?
               </h2>
               <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                Join hundreds of businesses that trust Design Custom to drive their online growth. Let's build your success story together.
+                Let's partner up and build something amazing. I'm excited to help your business reach its full potential online.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:contact@designcustom.com" className="px-8 py-4 bg-gradient-to-r from-[#c9a961] to-[#2563eb] rounded-full text-white text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#c9a961]/30">
