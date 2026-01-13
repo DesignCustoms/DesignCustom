@@ -278,7 +278,7 @@ export default function Home() {
               Why <span className="gradient-text">Design Custom</span>?
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              I bring fresh energy, modern strategies, and a genuine commitment to your success. When you work with me, you're not just another account. You're a valued partner.
+              We bring fresh energy, modern strategies, and a genuine commitment to your success. When you work with us, you're not just another account. You're a valued partner.
             </p>
           </div>
           
@@ -294,7 +294,7 @@ export default function Home() {
               </div>
               <div className="flex-1 pt-2">
                 <h3 className="text-2xl font-bold text-white mb-2">Personalized Attention</h3>
-                <p className="text-lg text-gray-400">You'll work directly with me. No assistants, no outsourcing. Your project gets my full focus and expertise.</p>
+                <p className="text-lg text-gray-400">You'll work directly with our team. Dedicated professionals focused entirely on your success and growth.</p>
               </div>
             </div>
 
@@ -337,7 +337,7 @@ export default function Home() {
               What You Can <span className="gradient-text">Expect</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              My commitment to delivering measurable results and exceptional service with every project.
+              Our commitment to delivering measurable results and exceptional service with every project.
             </p>
           </div>
 
@@ -402,7 +402,7 @@ export default function Home() {
                 Ready To <span className="gradient-text">Grow</span> Together?
               </h2>
               <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                Let's partner up and build something amazing. I'm excited to help your business reach its full potential online.
+                Let's partner up and build something amazing. We're excited to help your business reach its full potential online.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:info@designcustom.ca" className="px-8 py-4 bg-gradient-to-r from-[#c9a961] to-[#2563eb] rounded-full text-white text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#c9a961]/30">
