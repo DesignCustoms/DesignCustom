@@ -405,7 +405,7 @@ export default function Home() {
                 Let's partner up and build something amazing. I'm excited to help your business reach its full potential online.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:contact@designcustom.com" className="px-8 py-4 bg-gradient-to-r from-[#c9a961] to-[#2563eb] rounded-full text-white text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#c9a961]/30">
+                <a href="mailto:info@designcustom.ca" className="px-8 py-4 bg-gradient-to-r from-[#c9a961] to-[#2563eb] rounded-full text-white text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#c9a961]/30">
                   Get Your Free Consultation
                 </a>
                 <a href="#services" className="px-8 py-4 border-2 border-[#c9a961] rounded-full text-[#e4c77d] text-lg font-semibold hover:bg-[#c9a961]/10 transition-colors">
@@ -470,7 +470,7 @@ export default function Home() {
                 </a>
                 
                 <a 
-                  href="mailto:daniel@designcustom.outlook.com" 
+                  href="mailto:info@designcustom.ca" 
                   className="flex items-center justify-center gap-2 text-gray-300 hover:text-[#e4c77d] transition-colors group"
                 >
                   <div className="w-10 h-10 bg-gradient-to-br from-[#2563eb] to-[#c9a961] rounded-full flex items-center justify-center group-hover:shadow-lg group-hover:shadow-[#2563eb]/30 transition-all">
@@ -478,7 +478,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span className="font-medium">daniel@designcustom.outlook.com</span>
+                  <span className="font-medium">info@designcustom.ca</span>
                 </a>
               </div>
             </div>
