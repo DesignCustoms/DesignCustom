@@ -82,11 +82,11 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="min-h-screen flex flex-col justify-center pt-24 pb-12 px-6">
-        <div className="max-w-7xl mx-auto w-full">
+      <section className="pt-28 pb-16 px-6">
+        <div className="max-w-3xl mx-auto text-center">
 
           {/* Trust badge */}
-          <div className="flex items-center gap-2.5 mb-12">
+          <div className="flex items-center justify-center gap-2.5 mb-8">
             <div className="flex items-center gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-3.5 h-3.5 text-[#c9a961]" fill="currentColor" viewBox="0 0 20 20">
@@ -97,55 +97,52 @@ export default function Home() {
             <span className="text-xs text-gray-500 font-medium tracking-wide">Trusted by growing businesses</span>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-            {/* Left: Editorial headline */}
-            <div>
-              <h1 className="text-[clamp(3.5rem,9vw,7.5rem)] font-black leading-[0.88] tracking-tight mb-8">
-                <span className="block text-white">From</span>
-                <span className="block gradient-text italic">invisible</span>
-                <span className="block text-white">to</span>
-                <span className="block text-white">unstoppable.</span>
-              </h1>
-              <p className="text-sm text-gray-500 max-w-xs mb-1.5 leading-relaxed">
-                A complete profit-first growth system that drives more traffic, more clicks, and more paying customers — built entirely around your bottom line.
-              </p>
-              <p className="text-xs text-[#c9a961]/60 uppercase tracking-[0.2em] font-semibold mb-10">
-                * for businesses ready to scale
-              </p>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-                <a href="#contact" className="flex items-center gap-3 group">
-                  <span className="text-sm font-bold text-white">Book Free Strategy Call</span>
-                  <div className="w-10 h-10 rounded-full bg-[#c9a961] flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#c9a961]/40 transition-all flex-shrink-0">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-                    </svg>
-                  </div>
-                </a>
-                <a href="#services" className="text-sm text-gray-500 hover:text-white transition-colors underline underline-offset-4">
-                  See how it works ↓
-                </a>
-              </div>
-            </div>
-
-            {/* Right: Full logo — featured prominently */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-radial from-[#c9a961]/15 via-[#2563eb]/10 to-transparent blur-3xl scale-150 rounded-full" />
-                <Image
-                  src="/dc-full-logo.png"
-                  alt="Design Custom"
-                  width={440}
-                  height={440}
-                  priority
-                  className="relative z-10 logo-glow drop-shadow-2xl"
-                />
-              </div>
+          {/* Full logo — centered and prominent, cursor click lands right on it */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-radial from-[#c9a961]/20 via-[#2563eb]/10 to-transparent blur-3xl scale-150 rounded-full" />
+              <Image
+                src="/dc-full-logo.png"
+                alt="Design Custom"
+                width={240}
+                height={240}
+                priority
+                className="relative z-10 logo-glow w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 object-contain"
+              />
             </div>
           </div>
 
+          {/* Editorial headline */}
+          <h1 className="text-[clamp(2.8rem,9vw,7rem)] font-black leading-[0.88] tracking-tight mb-6">
+            <span className="block text-white">From</span>
+            <span className="block gradient-text italic">invisible</span>
+            <span className="block text-white">to</span>
+            <span className="block text-white">unstoppable.</span>
+          </h1>
+
+          <p className="text-sm text-gray-500 max-w-sm mx-auto mb-2 leading-relaxed">
+            A complete profit-first growth system that drives more traffic, more clicks, and more paying customers — built entirely around your bottom line.
+          </p>
+          <p className="text-xs text-[#c9a961]/60 uppercase tracking-[0.2em] font-semibold mb-10">
+            * for businesses ready to scale
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+            <a href="#contact" className="flex items-center gap-3 group">
+              <span className="text-sm font-bold text-white">Book Free Strategy Call</span>
+              <div className="w-10 h-10 rounded-full bg-[#c9a961] flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#c9a961]/40 transition-all flex-shrink-0">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+              </div>
+            </a>
+            <a href="#services" className="text-sm text-gray-500 hover:text-white transition-colors underline underline-offset-4">
+              See how it works ↓
+            </a>
+          </div>
+
           {/* Stats row */}
-          <div className="mt-16 pt-10 border-t border-white/[0.07] grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mt-14 pt-10 border-t border-white/[0.07] grid grid-cols-2 md:grid-cols-4 gap-6">
             <div>
               <CountUp end={50} suffix="+" />
               <p className="text-xs text-gray-600 mt-1.5 uppercase tracking-widest">Clients served</p>
@@ -170,7 +167,7 @@ export default function Home() {
       <Ticker />
 
       {/* Process Section */}
-      <section id="process" className="py-32 px-6">
+      <section id="process" className="py-20 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <p className="text-xs text-[#c9a961] uppercase tracking-[0.2em] font-bold mb-5">HOW IT WORKS</p>
@@ -179,7 +176,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-white/[0.06] rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.06] rounded-2xl overflow-hidden">
             {[
               {
                 num: "01",
@@ -231,7 +228,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-32 px-6 bg-[#080810]">
+      <section id="services" className="py-20 md:py-32 px-6 bg-[#080810]">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1fr_1.4fr] gap-20 items-start">
 
@@ -291,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* AI Automation Section */}
-      <section id="ai" className="py-32 px-6 bg-[#080810]">
+      <section id="ai" className="py-20 md:py-32 px-6 bg-[#080810]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <p className="text-xs text-[#c9a961] uppercase tracking-[0.2em] font-bold mb-5">THE EDGE</p>
@@ -380,7 +377,7 @@ export default function Home() {
       </section>
 
       {/* Why Us */}
-      <section id="about" className="py-32 px-6">
+      <section id="about" className="py-20 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
 
@@ -425,9 +422,9 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-32 px-6 bg-[#080810]">
+      <section id="contact" className="py-20 md:py-32 px-6 bg-[#080810]">
         <div className="max-w-7xl mx-auto">
-          <div className="relative border border-white/[0.08] rounded-3xl overflow-hidden p-16 md:p-24 text-center">
+          <div className="relative border border-white/[0.08] rounded-3xl overflow-hidden p-8 sm:p-16 md:p-24 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-[#c9a961]/[0.04] via-transparent to-[#2563eb]/[0.04]" />
             <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-gradient-to-br from-[#c9a961]/10 to-[#2563eb]/10 blur-3xl pointer-events-none" />
             <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-gradient-to-br from-[#2563eb]/8 to-transparent blur-3xl pointer-events-none" />
@@ -463,16 +460,16 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 px-6 border-t border-white/[0.05]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-5 md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
             <Image src="/dc-logo.png" alt="DC" width={28} height={28} className="logo-glow" />
             <span className="font-bold text-sm text-white">Design Custom</span>
           </div>
-          <div className="flex items-center gap-6 text-xs text-gray-600">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-xs text-gray-500 text-center">
             <a href="tel:7052297318" className="hover:text-white transition-colors">705-229-7318</a>
             <a href="mailto:info@designcustom.ca" className="hover:text-white transition-colors">info@designcustom.ca</a>
           </div>
-          <p className="text-xs text-gray-700">© 2026 Design Custom. All rights reserved.</p>
+          <p className="text-xs text-gray-700 text-center">© 2026 Design Custom. All rights reserved.</p>
         </div>
       </footer>
 

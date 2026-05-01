@@ -6,6 +6,9 @@ export default function CustomCursor() {
   const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Only activate on pointer devices (not iPhone/touch screens)
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+
     const dot = dotRef.current;
     const ring = ringRef.current;
     if (!dot || !ring) return;

@@ -28,15 +28,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-lato), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  cursor: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-lato), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-button, .button, a, summary, input, textarea, select {
-  cursor: none;
+/* Custom cursor — pointer devices only (not touch/iPhone) */
+@media (pointer: fine) {
+  body, button, .button, a, summary, input, textarea, select {
+    cursor: none;
+  }
 }
 
 html {
@@ -75,4 +77,18 @@ summary::marker {
 /* Radial gradient utility */
 .bg-gradient-radial {
   background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* Splash screen click ripple */
+@keyframes splash-ripple {
+  from { transform: scale(0.2); opacity: 1; width: 36px; height: 36px; }
+  to   { transform: scale(4);   opacity: 0; width: 36px; height: 36px; }
+}
+
+.splash-ripple {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #c9a961;
+  animation: splash-ripple 0.65s ease-out forwards;
 }
