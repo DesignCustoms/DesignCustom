@@ -14,24 +14,24 @@ const services = [
     items: ["Landing page design & testing", "A/B testing & analytics", "User experience audits"],
   },
   {
-    title: "Social Media Growth",
-    desc: "Build a powerful social presence that keeps your brand top-of-mind and drives consistent engagement with your audience.",
-    items: ["Content strategy & scheduling", "Community engagement", "Performance tracking & reporting"],
+    title: "Paid Traffic & PPC",
+    desc: "Drive immediate, high-intent traffic to your business through precision-targeted paid ad campaigns built to generate profit.",
+    items: ["Google Ads & search campaigns", "Retargeting & remarketing", "Ad copy & landing page optimization"],
+  },
+  {
+    title: "AI Automation & Bots",
+    desc: "Automate your lead capture, follow-ups, and customer touchpoints with intelligent bots that work 24/7 to grow your revenue.",
+    items: ["AI lead capture chatbots", "Automated follow-up sequences", "Workflow & pipeline automation"],
+  },
+  {
+    title: "Email Marketing",
+    desc: "Nurture leads and retain customers with personalized email campaigns that drive consistent engagement and repeat sales.",
+    items: ["Automated drip campaigns", "List segmentation & targeting", "Revenue-focused optimization"],
   },
   {
     title: "Analytics & Insights",
     desc: "Make data-driven decisions with comprehensive tracking and actionable insights into every aspect of your performance.",
     items: ["Custom dashboard setup", "ROI tracking & reporting", "Competitor analysis"],
-  },
-  {
-    title: "Email Marketing",
-    desc: "Nurture leads and retain customers with personalized email campaigns that drive engagement and consistent sales.",
-    items: ["Automated drip campaigns", "List segmentation & targeting", "Performance optimization"],
-  },
-  {
-    title: "Ongoing Maintenance",
-    desc: "Continuous updates, monitoring, and optimization to keep your online presence fresh and performing at its best.",
-    items: ["Regular content updates", "Performance monitoring", "Security & backup management"],
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
             <a href="#services" className="hover:text-white transition-colors">Services</a>
-            <a href="#process" className="hover:text-white transition-colors">Process</a>
+            <a href="#ai" className="hover:text-white transition-colors">AI & Automation</a>
             <a href="#about" className="hover:text-white transition-colors">About</a>
           </div>
           <a href="#contact" className="hidden md:flex items-center gap-2.5 group">
@@ -108,7 +108,7 @@ export default function Home() {
                 <span className="block text-white">unstoppable.</span>
               </h1>
               <p className="text-sm text-gray-500 max-w-xs mb-1.5 leading-relaxed">
-                A complete online growth system that gets you found, builds trust, and turns visitors into customers — without the guesswork.
+                A complete profit-first growth system that drives more traffic, more clicks, and more paying customers — built entirely around your bottom line.
               </p>
               <p className="text-xs text-[#c9a961]/60 uppercase tracking-[0.2em] font-semibold mb-10">
                 * for businesses ready to scale
@@ -239,16 +239,16 @@ export default function Home() {
             <div className="lg:sticky lg:top-32">
               <p className="text-xs text-[#c9a961] uppercase tracking-[0.2em] font-bold mb-5">WHAT WE DO</p>
               <h2 className="text-[clamp(2.2rem,4vw,4rem)] font-black leading-[0.9] tracking-tight mb-6">
-                SEO,<br />conversion,<br />social<br />& more.
+                SEO,<br />traffic,<br />AI<br />& more.
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs mb-10">
-                We don&apos;t just run campaigns — we craft growth systems optimized for conversion and retention, tailored to your goals.
+                We don&apos;t just run campaigns — we build profit-first growth systems that drive real traction, real clicks, and real revenue.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Advanced SEO", "Conversion CRO", "Social Media", "Email Marketing",
-                  "Analytics", "A/B Testing", "Content Strategy", "Link Building",
-                  "Landing Pages", "Maintenance", "Performance Audits", "Competitor Analysis",
+                  "Advanced SEO", "Conversion CRO", "Paid Traffic", "Email Marketing",
+                  "AI Automation", "A/B Testing", "Lead Generation", "Link Building",
+                  "Landing Pages", "AI Chatbots", "Performance Audits", "Competitor Analysis",
                 ].map((tag) => (
                   <span
                     key={tag}
@@ -286,6 +286,95 @@ export default function Home() {
                 </details>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Automation Section */}
+      <section id="ai" className="py-32 px-6 bg-[#080810]">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="text-xs text-[#c9a961] uppercase tracking-[0.2em] font-bold mb-5">THE EDGE</p>
+            <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-black leading-[0.9] tracking-tight max-w-2xl">
+              AI that works<br />while you sleep.
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <p className="text-gray-500 text-sm leading-relaxed max-w-md">
+              Most businesses are leaving revenue on the table by relying on manual processes. We deploy AI-powered systems and intelligent bots that capture leads, follow up automatically, and move prospects through your pipeline — around the clock, without lifting a finger.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              The result? More traction, more qualified clicks hitting your pages, and a sales machine that never clocks out. This isn&apos;t a gimmick — it&apos;s the competitive edge your competitors don&apos;t have yet.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                icon: (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                ),
+                title: "AI Lead Chatbots",
+                desc: "Intelligent bots that engage visitors the moment they land, qualify them as leads, and book calls — all automatically.",
+              },
+              {
+                icon: (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                ),
+                title: "Automated Follow-Ups",
+                desc: "Never let a lead go cold. Automated email and SMS sequences keep prospects warm and push them toward a purchase.",
+              },
+              {
+                icon: (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                ),
+                title: "Pipeline Automation",
+                desc: "Your entire sales pipeline runs on autopilot. From first click to closed deal — tracked, triggered, and optimized.",
+              },
+              {
+                icon: (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                ),
+                title: "24/7 Revenue Engine",
+                desc: "While you sleep, your AI system is generating leads, answering questions, and moving customers closer to buying.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-[#0d0d18] border border-white/[0.07] rounded-2xl p-7 hover:border-[#c9a961]/25 transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#c9a961]/15 to-[#2563eb]/10 flex items-center justify-center mb-5 text-[#c9a961] group-hover:from-[#c9a961]/25 transition-all">
+                  {item.icon}
+                </div>
+                <h3 className="font-bold text-white text-sm mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* AI CTA strip */}
+          <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 p-8 border border-[#c9a961]/15 rounded-2xl bg-[#c9a961]/[0.03]">
+            <div>
+              <p className="font-bold text-white text-base mb-1">Ready to automate your growth?</p>
+              <p className="text-gray-600 text-xs">We build and deploy your entire AI system — you just watch the leads come in.</p>
+            </div>
+            <a href="#contact" className="flex items-center gap-3 group flex-shrink-0">
+              <span className="text-sm font-bold text-white whitespace-nowrap">See What&apos;s Possible</span>
+              <div className="w-9 h-9 rounded-full bg-[#c9a961] flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#c9a961]/40 transition-all">
+                <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -349,7 +438,7 @@ export default function Home() {
                 Let&apos;s grow<br />together.
               </h2>
               <p className="text-gray-500 text-sm max-w-md mx-auto mb-12 leading-relaxed">
-                Ready to dominate your market online? We&apos;ll reply within 24 hours and can get started the same day.
+                Ready to drive more traffic, more clicks, and more profit? We&apos;ll reply within 24 hours and can get started the same day.
               </p>
               <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
                 <a href="mailto:info@designcustom.ca" className="flex items-center gap-3 group">
